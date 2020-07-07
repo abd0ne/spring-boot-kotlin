@@ -5,6 +5,7 @@ import javax.persistence.*
 @Entity
 @Table(name = "users")
 data class User(
+        @Column(name = "dob") var dob: String,
         @Column(name = "first_name") var firstname: String,
         @Column(name = "last_name") var lastname: String,
         @Column(name = "e_mail") var email: String,
